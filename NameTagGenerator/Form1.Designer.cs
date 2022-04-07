@@ -31,6 +31,7 @@
             this.save = new System.Windows.Forms.Button();
             this.chooseBackground = new System.Windows.Forms.Button();
             this.chooseCSV = new System.Windows.Forms.Button();
+            this.fontSelect = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // save
@@ -68,12 +69,24 @@
             this.chooseCSV.UseWaitCursor = true;
             this.chooseCSV.Click += new System.EventHandler(this.chooseCSV_Click);
             // 
+            // fontSelect
+            // 
+            this.fontSelect.FormattingEnabled = true;
+            this.fontSelect.Location = new System.Drawing.Point(80, 251);
+            this.fontSelect.Name = "fontSelect";
+            this.fontSelect.Size = new System.Drawing.Size(225, 28);
+            this.fontSelect.TabIndex = 3;
+            this.fontSelect.Text = "폰트 선택";
+            this.fontSelect.UseWaitCursor = true;
+            this.fontSelect.SelectedIndexChanged += new System.EventHandler(this.fontSelect_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(657, 753);
+            this.Controls.Add(this.fontSelect);
             this.Controls.Add(this.chooseCSV);
             this.Controls.Add(this.chooseBackground);
             this.Controls.Add(this.save);
@@ -83,6 +96,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.UseWaitCursor = true;
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
@@ -92,5 +106,6 @@
         private Button save;
         private Button chooseBackground;
         private Button chooseCSV;
+        private ComboBox fontSelect;
     }
 }
