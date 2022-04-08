@@ -31,7 +31,10 @@
             this.save = new System.Windows.Forms.Button();
             this.chooseBackground = new System.Windows.Forms.Button();
             this.chooseCSV = new System.Windows.Forms.Button();
-            this.fontSelect = new System.Windows.Forms.ComboBox();
+            this.selectFont = new System.Windows.Forms.Button();
+            this.exampleBox = new System.Windows.Forms.PictureBox();
+            this.test = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.exampleBox)).BeginInit();
             this.SuspendLayout();
             // 
             // save
@@ -44,6 +47,7 @@
             this.save.Text = "저장";
             this.save.UseVisualStyleBackColor = true;
             this.save.UseWaitCursor = true;
+            this.save.Click += new System.EventHandler(this.save_Click);
             // 
             // chooseBackground
             // 
@@ -69,16 +73,38 @@
             this.chooseCSV.UseWaitCursor = true;
             this.chooseCSV.Click += new System.EventHandler(this.chooseCSV_Click);
             // 
-            // fontSelect
+            // selectFont
             // 
-            this.fontSelect.FormattingEnabled = true;
-            this.fontSelect.Location = new System.Drawing.Point(80, 251);
-            this.fontSelect.Name = "fontSelect";
-            this.fontSelect.Size = new System.Drawing.Size(225, 28);
-            this.fontSelect.TabIndex = 3;
-            this.fontSelect.Text = "폰트 선택";
-            this.fontSelect.UseWaitCursor = true;
-            this.fontSelect.SelectedIndexChanged += new System.EventHandler(this.fontSelect_SelectedIndexChanged);
+            this.selectFont.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.selectFont.Location = new System.Drawing.Point(80, 240);
+            this.selectFont.Name = "selectFont";
+            this.selectFont.Size = new System.Drawing.Size(500, 50);
+            this.selectFont.TabIndex = 3;
+            this.selectFont.Text = "폰트 선택";
+            this.selectFont.UseVisualStyleBackColor = true;
+            this.selectFont.UseWaitCursor = true;
+            this.selectFont.Click += new System.EventHandler(this.selectFont_Click);
+            // 
+            // exampleBox
+            // 
+            this.exampleBox.Location = new System.Drawing.Point(80, 300);
+            this.exampleBox.Name = "exampleBox";
+            this.exampleBox.Size = new System.Drawing.Size(500, 375);
+            this.exampleBox.TabIndex = 4;
+            this.exampleBox.TabStop = false;
+            this.exampleBox.UseWaitCursor = true;
+            // 
+            // test
+            // 
+            this.test.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.test.Location = new System.Drawing.Point(400, 700);
+            this.test.Name = "test";
+            this.test.Size = new System.Drawing.Size(100, 31);
+            this.test.TabIndex = 5;
+            this.test.Text = "시행";
+            this.test.UseVisualStyleBackColor = true;
+            this.test.UseWaitCursor = true;
+            this.test.Click += new System.EventHandler(this.test_Click);
             // 
             // Form1
             // 
@@ -86,7 +112,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(657, 753);
-            this.Controls.Add(this.fontSelect);
+            this.Controls.Add(this.test);
+            this.Controls.Add(this.exampleBox);
+            this.Controls.Add(this.selectFont);
             this.Controls.Add(this.chooseCSV);
             this.Controls.Add(this.chooseBackground);
             this.Controls.Add(this.save);
@@ -97,6 +125,7 @@
             this.Text = "Form1";
             this.UseWaitCursor = true;
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.exampleBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -106,6 +135,8 @@
         private Button save;
         private Button chooseBackground;
         private Button chooseCSV;
-        private ComboBox fontSelect;
+        private Button selectFont;
+        private PictureBox exampleBox;
+        private Button test;
     }
 }
