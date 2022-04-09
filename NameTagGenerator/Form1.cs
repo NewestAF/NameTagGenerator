@@ -136,6 +136,11 @@ namespace NameTagGenerator
             return image;
         }
 
-        
+        private void contactButton_Click(object sender, EventArgs e)
+        {
+            var contactForm = new ContactForm();
+            contactForm.StartPosition = FormStartPosition.CenterParent;
+            contactForm.ShowDialog();
+        }
     }
 }

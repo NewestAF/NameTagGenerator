@@ -35,6 +35,8 @@
             this.selectFont = new System.Windows.Forms.Button();
             this.exampleBox = new System.Windows.Forms.PictureBox();
             this.test = new System.Windows.Forms.Button();
+            this.contact = new System.Windows.Forms.Label();
+            this.contactButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.exampleBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,7 +44,7 @@
             // 
             this.save.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.save.Location = new System.Drawing.Point(408, 525);
-            this.save.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.save.Margin = new System.Windows.Forms.Padding(2);
             this.save.Name = "save";
             this.save.Size = new System.Drawing.Size(78, 23);
             this.save.TabIndex = 0;
@@ -55,7 +57,7 @@
             // 
             this.chooseBackground.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.chooseBackground.Location = new System.Drawing.Point(62, 60);
-            this.chooseBackground.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chooseBackground.Margin = new System.Windows.Forms.Padding(2);
             this.chooseBackground.Name = "chooseBackground";
             this.chooseBackground.Size = new System.Drawing.Size(389, 38);
             this.chooseBackground.TabIndex = 1;
@@ -68,7 +70,7 @@
             // 
             this.chooseCSV.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.chooseCSV.Location = new System.Drawing.Point(62, 120);
-            this.chooseCSV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chooseCSV.Margin = new System.Windows.Forms.Padding(2);
             this.chooseCSV.Name = "chooseCSV";
             this.chooseCSV.Size = new System.Drawing.Size(389, 38);
             this.chooseCSV.TabIndex = 2;
@@ -81,7 +83,7 @@
             // 
             this.selectFont.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.selectFont.Location = new System.Drawing.Point(62, 180);
-            this.selectFont.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.selectFont.Margin = new System.Windows.Forms.Padding(2);
             this.selectFont.Name = "selectFont";
             this.selectFont.Size = new System.Drawing.Size(389, 38);
             this.selectFont.TabIndex = 3;
@@ -93,7 +95,7 @@
             // exampleBox
             // 
             this.exampleBox.Location = new System.Drawing.Point(62, 225);
-            this.exampleBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.exampleBox.Margin = new System.Windows.Forms.Padding(2);
             this.exampleBox.Name = "exampleBox";
             this.exampleBox.Size = new System.Drawing.Size(389, 281);
             this.exampleBox.TabIndex = 4;
@@ -104,7 +106,7 @@
             // 
             this.test.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.test.Location = new System.Drawing.Point(311, 525);
-            this.test.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.test.Margin = new System.Windows.Forms.Padding(2);
             this.test.Name = "test";
             this.test.Size = new System.Drawing.Size(78, 23);
             this.test.TabIndex = 5;
@@ -113,12 +115,33 @@
             this.test.UseWaitCursor = true;
             this.test.Click += new System.EventHandler(this.test_Click);
             // 
+            // contact
+            // 
+            this.contact.AutoSize = true;
+            this.contact.CausesValidation = false;
+            this.contact.Location = new System.Drawing.Point(20, 525);
+            this.contact.Name = "contact";
+            this.contact.Size = new System.Drawing.Size(0, 15);
+            this.contact.TabIndex = 6;
+            // 
+            // contactButton
+            // 
+            this.contactButton.Location = new System.Drawing.Point(25, 525);
+            this.contactButton.Name = "contactButton";
+            this.contactButton.Size = new System.Drawing.Size(80, 23);
+            this.contactButton.TabIndex = 7;
+            this.contactButton.Text = "개발자 정보";
+            this.contactButton.UseVisualStyleBackColor = true;
+            this.contactButton.Click += new System.EventHandler(this.contactButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(513, 571);
+            this.Controls.Add(this.contactButton);
+            this.Controls.Add(this.contact);
             this.Controls.Add(this.test);
             this.Controls.Add(this.exampleBox);
             this.Controls.Add(this.selectFont);
@@ -126,7 +149,7 @@
             this.Controls.Add(this.chooseBackground);
             this.Controls.Add(this.save);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(529, 610);
             this.Name = "Form1";
@@ -136,6 +159,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.exampleBox)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -147,5 +171,7 @@
         private Button selectFont;
         private PictureBox exampleBox;
         private Button test;
+        private Label contact;
+        private Button contactButton;
     }
 }
