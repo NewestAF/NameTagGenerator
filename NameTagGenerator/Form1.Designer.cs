@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.save = new System.Windows.Forms.Button();
             this.chooseBackground = new System.Windows.Forms.Button();
             this.chooseCSV = new System.Windows.Forms.Button();
@@ -40,9 +41,10 @@
             // save
             // 
             this.save.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.save.Location = new System.Drawing.Point(525, 700);
+            this.save.Location = new System.Drawing.Point(408, 525);
+            this.save.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(100, 31);
+            this.save.Size = new System.Drawing.Size(78, 23);
             this.save.TabIndex = 0;
             this.save.Text = "저장";
             this.save.UseVisualStyleBackColor = true;
@@ -52,9 +54,10 @@
             // chooseBackground
             // 
             this.chooseBackground.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.chooseBackground.Location = new System.Drawing.Point(80, 80);
+            this.chooseBackground.Location = new System.Drawing.Point(62, 60);
+            this.chooseBackground.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chooseBackground.Name = "chooseBackground";
-            this.chooseBackground.Size = new System.Drawing.Size(500, 50);
+            this.chooseBackground.Size = new System.Drawing.Size(389, 38);
             this.chooseBackground.TabIndex = 1;
             this.chooseBackground.Text = "배경 선택";
             this.chooseBackground.UseVisualStyleBackColor = true;
@@ -64,9 +67,10 @@
             // chooseCSV
             // 
             this.chooseCSV.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.chooseCSV.Location = new System.Drawing.Point(80, 160);
+            this.chooseCSV.Location = new System.Drawing.Point(62, 120);
+            this.chooseCSV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chooseCSV.Name = "chooseCSV";
-            this.chooseCSV.Size = new System.Drawing.Size(500, 50);
+            this.chooseCSV.Size = new System.Drawing.Size(389, 38);
             this.chooseCSV.TabIndex = 2;
             this.chooseCSV.Text = "CSV 선택";
             this.chooseCSV.UseVisualStyleBackColor = true;
@@ -76,9 +80,10 @@
             // selectFont
             // 
             this.selectFont.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.selectFont.Location = new System.Drawing.Point(80, 240);
+            this.selectFont.Location = new System.Drawing.Point(62, 180);
+            this.selectFont.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.selectFont.Name = "selectFont";
-            this.selectFont.Size = new System.Drawing.Size(500, 50);
+            this.selectFont.Size = new System.Drawing.Size(389, 38);
             this.selectFont.TabIndex = 3;
             this.selectFont.Text = "폰트 선택";
             this.selectFont.UseVisualStyleBackColor = true;
@@ -87,9 +92,10 @@
             // 
             // exampleBox
             // 
-            this.exampleBox.Location = new System.Drawing.Point(80, 300);
+            this.exampleBox.Location = new System.Drawing.Point(62, 225);
+            this.exampleBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.exampleBox.Name = "exampleBox";
-            this.exampleBox.Size = new System.Drawing.Size(500, 375);
+            this.exampleBox.Size = new System.Drawing.Size(389, 281);
             this.exampleBox.TabIndex = 4;
             this.exampleBox.TabStop = false;
             this.exampleBox.UseWaitCursor = true;
@@ -97,9 +103,10 @@
             // test
             // 
             this.test.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.test.Location = new System.Drawing.Point(400, 700);
+            this.test.Location = new System.Drawing.Point(311, 525);
+            this.test.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.test.Name = "test";
-            this.test.Size = new System.Drawing.Size(100, 31);
+            this.test.Size = new System.Drawing.Size(78, 23);
             this.test.TabIndex = 5;
             this.test.Text = "시행";
             this.test.UseVisualStyleBackColor = true;
@@ -108,18 +115,20 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(657, 753);
+            this.ClientSize = new System.Drawing.Size(513, 571);
             this.Controls.Add(this.test);
             this.Controls.Add(this.exampleBox);
             this.Controls.Add(this.selectFont);
             this.Controls.Add(this.chooseCSV);
             this.Controls.Add(this.chooseBackground);
             this.Controls.Add(this.save);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(675, 800);
+            this.MinimumSize = new System.Drawing.Size(529, 610);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

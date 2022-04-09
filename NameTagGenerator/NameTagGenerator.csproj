@@ -7,6 +7,11 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <StartupObject>NameTagGenerator.Program</StartupObject>
+    <ApplicationIcon>name.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="name.ico" />
+  </ItemGroup>
 
 </Project>
