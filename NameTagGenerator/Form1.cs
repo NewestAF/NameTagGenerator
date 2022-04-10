@@ -87,10 +87,9 @@ namespace NameTagGenerator
 
             var width = exampleImage.Width;
             var height = exampleImage.Height;
-            var fixedHeight = 500 * (double)height / width;
 
             exampleBox.Image = new Bitmap(exampleImage, 
-                new Size(500, (int) Math.Round(fixedHeight)));
+                new Size(500, (int) Math.Round(500 * (double)height / width)));
 
         }
         private void save_Click(object sender, EventArgs e)
